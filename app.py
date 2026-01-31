@@ -8,7 +8,8 @@ def hello_world():
 
 @app.route("/<name>")
 def name(name):
-    return render_template("name.html",name=name)    
+    image="c4.jpg"
+    return render_template("name.html",name=name,image=image)    
 
 @app.route("/abc")
 def abc():
